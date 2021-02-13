@@ -1,0 +1,32 @@
+.foto-contact {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 5%;
+   
+}
+
+.text-contact {
+    margin: 0 auto;
+    text-align: left;
+    width: 40%;
+    padding: 2% 0% 8% 0%;
+}
+
+
+@media (max-width: 1300px) {
+    .foto-contact {
+        width: 40%;
+} 
+.text-contact {
+    width: 50%;
+}
+}
+@media (max-width: 700px) {
+    .foto-contact {
+        width: 60%;
+         padding: 2% 0% 10% 0%;
+    } 
+    .text-contact {
+        width: 80%;
+    }
+}

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'fontcf181c908f12bcf3eb2f1dfdb2f97d01';
+        
+        src:    url('https://nomail.com.ua/files/eot/cf181c908f12bcf3eb2f1dfdb2f97d01.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/cf181c908f12bcf3eb2f1dfdb2f97d01.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/cf181c908f12bcf3eb2f1dfdb2f97d01.woff2') format('woff2');
+    }
+
+body {
+    margin: 0 auto;
+}
+
+.foto-blocks img {pointer-events: none}
+
+img {
+    max-width: 100%;
+    
+}
+
+.logos {
+    max-width: 12%; 
+    padding: 70px 2% 30px 2%;
+}
+
+a {
+    text-decoration: none;
+    color: black;            
+}
+.menu {  
+    font-size: 85%;
+    
+    color: black;
+    font-family: 'fontcf181c908f12bcf3eb2f1dfdb2f97d01';
+    justify-items: center;
+    display: grid;
+    grid-template: repeat(5, 1fr);
+    grid-template-areas: "inter house comm art cauza";
+}
+.foto {
+    padding: 3% 25% 1% 25%;
+    justify-items: center;
+    
+    
+}
+.foto-blocks { 
+    margin: 0 auto;
+    max-width: 70%;
+    display: grid;
+    grid-template: repeat(1, 1fr);
+    grid-template-areas: "lo"
+                         "m"
+                         "f1"
+                         "f2"
+                         "f3"
+                         "f4"
+                         "f5"
+                         "f6"
+                         "f7"
+                         "f8"
+                         "f9"
+                         "f10";
+}
+
+.logos { grid-area: lo;}
+.menu { grid-area: m;}
+.foto1 { grid-area: f1;}   
+.foto2 { grid-area: f2;}   
+.foto3 { grid-area: f3;}  
+.foto4 { grid-area: f4;}   
+.foto5 { grid-area: f5;}   
+.foto6 { grid-area: f6;}   
+.foto7 { grid-area: f7;}   
+.foto8 { grid-area: f8;}   
+.foto9 { grid-area: f9;}   
+.foto10 { grid-area: f10;}  
+
+
+.interior {grid-area: inter; padding: 0px 1.8vw 8px 1.8vw}
+.houses {grid-area: house; padding: 0px 1.8vw 8px 1.8vw}
+.commerce {grid-area: comm; padding: 0px 1.8vw 8px 1.8vw}
+.art { grid-area: art; padding: 0px 1.8vw 8px 1.8vw}
+.cauza {grid-area: cauza; padding: 0px 1.8vw 8px 1.8vw}
+
+
+@media (max-width: 700px) {
+    .foto-blocks {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                         "lo lo lo"
+                         "m m m"
+                         "f1 f1 f1"
+                         "f2 f2 f2"
+                         "f3 f3 f3"
+                         "f4 f4 f4"
+                         "f5 f5 f5"
+                         "f6 f6 f6"
+                         "f7 f7 f7"
+                         "f8 f8 f8"
+                         "f9 f9 f9"
+                         "f10 f10 f10";
+    } 
+    .logos {
+        max-width: 25%;
+       justify-self: center;
+      
+    }     
+    a {font-size: 70%;}
+    .foto { padding: 8%;}
+    .menu { font-size: 80%;}
+}

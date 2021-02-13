@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'fontcf181c908f12bcf3eb2f1dfdb2f97d01';
+        src:    url('https://nomail.com.ua/files/eot/cf181c908f12bcf3eb2f1dfdb2f97d01.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/cf181c908f12bcf3eb2f1dfdb2f97d01.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/cf181c908f12bcf3eb2f1dfdb2f97d01.woff2') format('woff2'); 
+}
+.App-header {
+    margin:  0 auto;
+    max-width: 70%;
+    display: grid;
+    grid-template-areas:"lo lo lo"
+                        "m m m"
+                        "p1 p2 p3"
+                        "p4 p5 p6"
+                        "p7 p8 p9"                   
+}
+    
+body { margin: 0 auto }
+img { width: 100% }
+a { text-decoration: none; color: black }
+p { font-family: 'fontcf181c908f12bcf3eb2f1dfdb2f97d01'; color: gray; margin: 10px }
+h2 { margin: 5px; font-size: 100% }
+.logo { padding: 70px 1.5% 1px 1.5%; max-width: 12% }
+.post { padding: 5%; }
+.post img { height: 20vw; }
+
+.text {
+    padding-top: 10px; 
+    display: grid;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80%;
+    color: black;   
+}
+.logo {grid-area: lo}
+.menu {grid-area: m}
+.post1 {grid-area: p1}
+.post2 {grid-area: p2}
+.post3 {grid-area: p3}
+.post4 {grid-area: p4}
+.post5 {grid-area: p5}
+.post6 {grid-area: p6}
+.post7 {grid-area: p7}
+.post8 {grid-area: p8}
+.post9 {grid-area: p9}
+
+.interior { grid-area: inter; padding: 0px 1.8vw 8px 1.8vw }
+.houses { grid-area: house; padding: 0px 1.8vw 8px 1.8vw }
+.commerce { grid-area: comm; padding: 0px 1.8vw 8px 1.8vw }
+.art { grid-area: art; padding: 0px 1.8vw 8px 1.8vw }
+.cauza {grid-area: cauza; padding: 0px 1.5vw 8px 1.5vw }
+
+.logo:hover   { opacity: 0.6; transform: scale(0.98); transition: all 0.3s }
+.post:hover { opacity: 0.8; transform: scale(1.01); transition: all 0.5s }
+.m:hover { opacity: 0.8; transform: scale(1.01); transition: all 0.5s }
+
+.menu {  
+    color: black;
+    font-family: 'fontcf181c908f12bcf3eb2f1dfdb2f97d01';
+    font-size:  0.8vw ;
+    justify-self: right;
+    display: grid;
+    grid-template-areas: "inter house comm art cauza";
+}
+.menu a.active {
+    text-decoration: underline;
+}
+.archive-footer {
+    margin: 0 auto;
+    max-width: 60%;
+    display: grid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: ". sn .";
+}
+.network { margin: 10%;}
+
+.social-network {
+    justify-items: center;  
+    justify-self: center;
+    max-width: 40%;
+    grid-area: sn;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-areas: "inst youtube vk face ";
+}
+
+.network:hover { opacity: 0.8; transform: scale(1.10); transition: all 0.5s }
+.inst { grid-area: inst;}
+.youtube {grid-area: youtube;}
+.vk {grid-area: vk;}
+.face { grid-area: face;}
+
+hr {
+    border: none;
+    height: 1px;
+    margin: 0 20%;
+    margin-top: 2%;
+    background-image: linear-gradient(to right, #FFF, black, #FFF);
+}
+.footer-address { margin-bottom: 2%;}
+.footer-address p {
+    display: grid; 
+    justify-items: center;  
+    margin: 0%;
+    
+}
+
+@media (max-width: 1300px) {
+    .App-header {
+        max-width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "lo lo"
+        "m m"
+        "p1 p2"
+        "p3 p4"
+        "p5 p6"
+        "p7 p8"
+        "p9 ."
+    } 
+   .logo { padding: 70px 2% 30px 2%; max-width: 15%;}      
+   .post img { height: auto }
+   .menu {justify-self: normal; justify-items: center; font-size: 1.2vw;}
+   .archive-footer {max-width: 90%}
+}
+
+@media (max-width: 700px) {
+    .App-header {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "lo"
+        "m"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6"
+        "p7"
+        "p8"
+        "p9"
+    } 
+    a { font-size: 70% }
+    img { height: auto }
+    .logo { max-width: 25%; justify-self: center }  
+    .menu { font-size: 80%;}   
+    .archive-footer {max-width: 100%}
+    .social-network {max-width: 60%}
+    .footer-address p {font-size: 90%;}
+}
+
+
+
+

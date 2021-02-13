@@ -1,0 +1,28 @@
+.mapStyle {
+   width: 80%;
+   height: 50%;
+   margin: 0 auto;
+   padding-top: 5%;
+   padding-bottom: 600px;
+}
+
+/* @media (max-width: 2000px) {
+    
+   .mapStyle {
+      height: 20%;
+   }
+} */
+
+/* @media (max-width: 1300px) {
+   .mapStyle {
+      padding-bottom: 70%;
+    
+   } 
+} */
+
+@media (max-width: 700px) {
+   .mapStyle {
+      padding-bottom: 500px;
+    
+   } 
+}
