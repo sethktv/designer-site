@@ -1,2 +1,2 @@
 Это мой первый коммерческий проект, где использовал React SPA и grid для верстки.
-https://cauza.ru/
+https://cauza.ru
